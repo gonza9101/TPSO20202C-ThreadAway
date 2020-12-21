@@ -8,11 +8,14 @@ Trabajo Práctico PedidOS Ya! de la materia Sistemas Operativos desarrollado en 
 el cual, cuenta con diferentes módulos implementados en un entorno distribuido simulando un sistema de pedidos con un manejo adecuado de los recursos.
 
 <h4>Módulos:</h4>
-- Cliente: proceso encargado de realizar solicitudes de consulta y selección de restaurantes, y creación de pedidos y platos.
-- App: proceso planificador de pedidos y asignación de repartidores según algortimos FIFO, SJF S/D y HRRN.
-- Comanda: proceso simulador de memoria y swap con un esquema de segmentación paginada.
-- Restaurante: proceso planificador de platos y asignacion de cocineros según algoritmos FIFO y RR.
-- Sindicato: proceso simulador de Filesystem encargado de administrar archivos para el manejo de restaurantes, pedidos, platos y recetas bajo un esquema enlazado.
+<ul>
+  <li>Cliente: proceso encargado de realizar solicitudes de consulta y selección de restaurantes, y creación de pedidos y platos.</li>
+  <li>Cliente: proceso encargado de realizar solicitudes de consulta y selección de restaurantes, y creación de pedidos y platos.</li>
+  <li>App: proceso planificador de pedidos y asignación de repartidores según algortimos FIFO, SJF S/D y HRRN.</li>
+  <li>Comanda: proceso simulador de memoria y swap con un esquema de segmentación paginada.</li>
+  <li>Restaurante: proceso planificador de platos y asignacion de cocineros según algoritmos FIFO y RR.</li>
+  <li>Sindicato: proceso simulador de Filesystem encargado de administrar archivos para el manejo de restaurantes, pedidos, platos y recetas bajo un esquema enlazado.</li>
+</ul>
 
 <h4>Disclaimer shared</h4>
 
@@ -32,30 +35,43 @@ de cada proyecto, a fin de poder compilar en otras VMs.
 <h3>Pasos para Deploy:</h3>
 
 <h4>PASO 0</h4>
-- vi .bashrc
-- Ir al final de todo y presionar la tecla "i" para que permita ingresar texto
-- Pegar el siguiente texto: <br>
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/Repositorios/tp-2020-2c-Thread-Away/shared/Debug/
-- Escape (para cancelar el INSERTAR)
-- :wq + enter
+<ul>
+  <li>vi .bashrc</li>
+  <li>Ir al final de todo y presionar la tecla "i" para que permita ingresar texto</li>
+  <li>Pegar el siguiente texto: export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/Repositorios/tp-2020-2c-Thread-Away/shared/Debug/</li>
+  <li>Escape (para cancelar el INSERTAR)</li>
+  <li>:wq + enter</il>
+</ul>
 
 <h4>PASO 1</h4>
-- mkdir Repositorios
+<ul>
+  <li>mkdir Repositorios</li>
+</ul>
 
 <h4>PASO 2</h4>
-- cd Repositorios
+<ul>
+  <li>cd Repositorios</li>
+</ul>
 
 <h4>PASO 3</h4>
-- vi deploy.sh
-(Copiar el contenido de este link: https://github.com/sisoputnfrba/tp-2020-2c-Thread-Away/blob/master/deploy.sh)
-- Pegar con click derecho
+<ul>
+  <li>vi deploy.sh</li>
+  (Copiar el contenido de este link: https://github.com/sisoputnfrba/tp-2020-2c-Thread-Away/blob/master/deploy.sh)
+  <li>Pegar con click derecho</li>
+</ul>
 
 <h4>PASO 4</h4>
-- Escape (para cancelar el INSERTAR)
-- :wq + enter
+<ul>
+  <li>Escape (para cancelar el INSERTAR)</li>
+  <li>:wq + enter</li>
+</ul>
 
 <h4>PASO 5</h4>
-- chmod 777 deploy.sh
+<ul>
+  <li>chmod 777 deploy.sh</li>
+</ul>
 
 <h4>PASO 6</h4>
-- ./deploy.sh -t=/home/utnso/Repositorios -d=shared -p=app -p=comanda -p=cliente -p=restaurante -p=sindicato tp-2020-2c-Thread-Away
+<ul>
+  <li>./deploy.sh -t=/home/utnso/Repositorios -d=shared -p=app -p=comanda -p=cliente -p=restaurante -p=sindicato tp-2020-2c-Thread-Away</li>
+</ul>
